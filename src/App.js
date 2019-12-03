@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import { Container } from '@material-ui/core'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import IndexPage from './pages/IndexPage.jsx'
+import DetailPage from './pages/DetailPage.jsx'
+import AddPage from './pages/AddPage.jsx'
+import EditPage from './pages/EditPage.jsx'
+import AboutPage from './pages/AboutPage.jsx'
 
-export default App;
+import AppBar from './components/AppBar.component.jsx'
+import { ArticleProvider } from './context/Article.context.jsx'
+
+const App = () => (
+  <ArticleProvider>
+    <AppBar />
+    <Container style={{ marginTop: '1.5rem' }}>
+      <Switch>
+        <Route path="/" exact component={IndexPage} />
+        <Route path="/add" exact component={AddPage} />
+        <Route path="/about" exact component={AboutPage} />
+        <Route path="/:id" exact component={DetailPage} />
+        <Route path="/:id/edit" exact component={EditPage} />
+      </Switch>
+    </Container>
+  </ArticleProvider>
+)
+
+export default App
