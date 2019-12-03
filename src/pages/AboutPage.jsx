@@ -22,7 +22,7 @@ const IndexPage = () => {
                     <br />
 
                     <Typography>
-                        This is a simple management blog article created by <code>react-hooks</code> and <code>react-context</code> as state management. Without <code>React.Component</code>, <code>redux</code>, or <code>mobx</code>
+                        This is a simple management blog article created using <code>react-hooks</code> and <code>react-context</code> for state management. Without <code>React.Component</code>, <code>redux</code>, or <code>mobx</code>
                     </Typography>
 
                     <br />
