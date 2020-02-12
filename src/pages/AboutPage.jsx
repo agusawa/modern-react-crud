@@ -4,10 +4,7 @@ import { css, jsx } from '@emotion/core'
 
 const styles = {
     paper: css`
-        padding: 2rem;`,
-
-    textGrey: css`
-        color: #95a5a6;`
+        padding: 2rem;`
 }
 
 const IndexPage = () => {
@@ -34,34 +31,7 @@ const IndexPage = () => {
                     <a href="https://github.com/Aguezz/modern-react-crud/" target="_blank" rel="noopener noreferrer">
                         https://github.com/Aguezz/modern-react-crud/
                     </a>
-
                     <br />
-                    <br />
-
-                    <Typography>
-                        See my portfolio here :
-                    </Typography>
-                    <a href="https://aguezz.github.io/" target="_blank" rel="noopener noreferrer">
-                        https://aguezz.github.io/
-                    </a>
-
-                    <br />
-                    <br />
-
-                    <Typography>
-                        Linkedin :
-                    </Typography>
-                    <a href="https://www.linkedin.com/in/agus-stiawan-793b4b169/" target="_blank" rel="noopener noreferrer">
-                        https://www.linkedin.com/in/agus-stiawan-793b4b169/
-                    </a>
-
-                    <br />
-                    <br />
-
-
-                    <Typography css={styles.textGrey}>
-                        Thank you ;D
-                    </Typography>
                 </Paper>
             </Grid>
         </Grid>
