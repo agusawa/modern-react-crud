@@ -2,6 +2,8 @@
 
 This is a simple management blog article created using `react-hooks` and `react-context` for state management. Without `React.Component`, `redux`, or `mobx`
 
+See the demo in https://aguezz.github.io/modern-react-crud
+
 ## Installation
 
 ### Clone from repository
